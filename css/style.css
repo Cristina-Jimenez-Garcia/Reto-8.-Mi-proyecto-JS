@@ -1,0 +1,42 @@
+/* login */
+.registro{
+    width: 70%;
+    max-width: 400em;
+    margin: auto;
+    margin-top: 10%;
+    background-image: url(gimnasio.jpg)center center cover no-repeat fixed;
+}
+
+.regAdministrador{
+    text-align: right;
+    float: right;
+    width: 50%;
+}
+.regCliente{
+    width: 49%;
+    float:left;
+    border-right: black solid;
+}
+
+h2{
+    text-align: center;
+}
+
+.usuarioIncorrecto, .adminIncorrecto{
+    color: red;
+}
+
+/* usuario */
+
+#volver {
+    float: right;
+}
+
+.navbar{
+    background-color: rgb(151, 197, 199);
+}
+
+table {
+    margin-left:auto;
+    margin-right:auto;
+}
