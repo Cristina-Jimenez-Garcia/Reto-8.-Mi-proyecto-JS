@@ -4,7 +4,6 @@
     max-width: 400em;
     margin: auto;
     margin-top: 10%;
-    background-image: url(gimnasio.jpg)center center cover no-repeat fixed;
 }
 
 .regAdministrador{
@@ -18,8 +17,8 @@
     border-right: black solid;
 }
 
-h2{
-    text-align: center;
+h1{
+    text-align:center; 
 }
 
 .usuarioIncorrecto, .adminIncorrecto{
@@ -32,11 +31,62 @@ h2{
     float: right;
 }
 
-.navbar{
-    background-color: rgb(151, 197, 199);
+table {
+    text-align: center;
 }
 
-table {
-    margin-left:auto;
-    margin-right:auto;
+/* .cardio, .bodyFit, .boxeo, .tonoFit, .spining, .kickBoxing, .pilates, .yoga, .zumba{
+    display: none;
+} */
+
+#sala1, #sala2, #sala{
+    text-align:center;
+    width:50%; 
+    margin-left: 25%;
+}
+
+.hora{
+    border: 1px solid black;
+}
+
+#pilates{
+    background-color: rgb(107, 107, 216);
+}
+#spining{
+    background-color: rgb(231, 170, 56);
+}
+#boxeo{
+    background-color: rgb(146, 64, 64);
+}
+#zumba{
+    background-color: rgb(209, 134, 134);
+}
+#cardio{
+    background-color: rgb(95, 180, 106);
+}
+#bodyFit{
+    background-color: rgb(201, 202, 104);
+}
+#tonoFit{
+    background-color: rgb(213, 131, 216);
+}
+#kickBoxing{
+    background-color: rgb(79, 192, 183);
+}
+#yoga{
+    background-color: rgb(115, 88, 150);
+}
+
+.eliminarClase{
+    text-align:center; 
+    margin-left: 25%;
+    margin-top: 1%;
+}
+
+.mostrarSala1{
+    margin-left: 38.4%;
+    margin-bottom: 1%;
+}
+.mostrarSala1{
+    margin-bottom: 1%;
 }

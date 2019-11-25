@@ -28,7 +28,7 @@
                 Contraseña <input required="true" type="password" name="contraseña"><br><br>
                 <span class="adminIncorrecto">Usuario o contraseña incorrectas.</span>
             </form>
-            <button onclick=validacionAdmin() class="entrarAdmin" >Entrar</button>
+            <button onclick=validacionAdmin() class="entrarAdmin">Entrar</button>
         </div>
     </div>
     <div class="cliente" id="cliente">
@@ -40,72 +40,72 @@
             </nav>
         </header>
         <h1>Cliente</h1>
-        <table id="sala1">
+        <table id="sala">
             <tr>
                 <th></th>
-                <th>Lunes</th>
-                <th>Martes</th>
-                <th>Miercoles</th>
+                <th class="hora">Lunes</th>
+                <th class="hora">Martes</th>
+                <th class="hora">Miercoles</th>
             </tr>
             <tr>
-                <th>08:00-10:00</th>
-                <th>Pilates</th>
-                <th>Spinning</th>
-                <th>Boxeo</th>
+                <th class="hora">08:00-10:00</th>
+                <th id="pilates">Pilates</th>
+                <th id="spining">Spinning</th>
+                <th id="boxeo">Boxeo</th>
             </tr>
             <tr>
-                <th>10:00-12:00</th>
-                <th>Zumba</th>
-                <th>Cardio</th>
-                <th>Yoga</th>
+                <th class="hora">10:00-12:00</th>
+                <th id="zumba">Zumba</th>
+                <th id="cardio">Cardio</th>
+                <th id="yoga">Yoga</th>
             </tr>
             <tr>
-                <th>12:00-14:00</th>
-                <th>BodyFit</th>
-                <th>Tono-Fit</th>
-                <th>Kick boxing</th>
+                <th class="hora">12:00-14:00</th>
+                <th id="bodyFit">BodyFit</th>
+                <th id="tonoFit">Tono-Fit</th>
+                <th id="kickBoxing">Kick boxing</th>
             </tr>
             <tr>
-                <th>15:00-17:00</th>
-                <th>Kick boxing</th>
-                <th>Pilates</th>
-                <th>Spinning</th>
+                <th class="hora">15:00-17:00</th>
+                <th id="kickBoxing">Kick boxing</th>
+                <th id="pilates">Pilates</th>
+                <th id="spining">Spinning</th>
             </tr>
             <tr>
-                <th>17:00-19:00</th>
-                <th>Boxeo</th>
-                <th>BodyFit</th>
-                <th>Cardio</th>
+                <th class="hora">17:00-19:00</th>
+                <th id="boxeo">Boxeo</th>
+                <th id="bodyFit">BodyFit</th>
+                <th id="cardio">Cardio</th>
             </tr>
             <tr>
-                <th>19:00-21:00</th>
-                <th>Yoga</th>
-                <th>Zumba</th>
-                <th>Tono-Fit</th>
+                <th class="hora">19:00-21:00</th>
+                <th id="yoga">Yoga</th>
+                <th id="zumba">Zumba</th>
+                <th id="tonoFit">Tono-Fit</th>
             </tr>
         </table>
-        <select name="eliminarClase">
-            <option value="1" class="cardio" onclick=bloquearEliminarClase()>Cardio</option>
-            <option value="2" class="bodyFit" onclick=bloquearEliminarClase()>BodyFit</option>
-            <option value="3" onclick=bloquearEliminarClase()>Boxeo</option>
-            <option value="4" onclick=bloquearEliminarClase()>Tono-Fit</option>
-            <option value="5" onclick=bloquearEliminarClase()>Spinning</option>
-            <option value="6" onclick=bloquearEliminarClase()>Kick boxing</option>
-            <option value="7" onclick=bloquearEliminarClase()>Pilates</option>
-            <option value="8" onclick=bloquearEliminarClase()>Yoga</option>
-            <option value="9" onclick=bloquearEliminarClase()>Zumba</option>
+        <select name="eliminarClase" class="eliminarClase">
+            <option value="1" class="elimCardio" onclick=bloquearEliminarClase()>Cardio</option>
+            <option value="2" class="elimBodyFit" onclick=bloquearEliminarClase()>BodyFit</option>
+            <option value="3" class="elimBoxeo" onclick=bloquearEliminarClase()>Boxeo</option>
+            <option value="4" class="elimTonoFit" onclick=bloquearEliminarClase()>Tono-Fit</option>
+            <option value="5" class="elimSpining" onclick=bloquearEliminarClase()>Spinning</option>
+            <option value="6" class="elimKickBoxing" onclick=bloquearEliminarClase()>Kick boxing</option>
+            <option value="7" class="elimPilates" onclick=bloquearEliminarClase()>Pilates</option>
+            <option value="8" class="elimYoga" onclick=bloquearEliminarClase()>Yoga</option>
+            <option value="9" class="elimZumba" onclick=bloquearEliminarClase()>Zumba</option>
             <option selected disabled>Eliminar Clase</option>
         </select>
-        <select name="añadirClase">
-            <option value="1" onclick=bloquearAñadirClase()>Cardio</option>  
-            <option value="2" onclick=bloquearAñadirClase()>BodyFit</option>
-            <option value="3" onclick=bloquearAñadirClase()>Boxeo</option>
-            <option value="4" onclick=bloquearAñadirClase()>Tono-Fit</option>
-            <option value="5" onclick=bloquearAñadirClase()>Spinning</option>
-            <option value="6" onclick=bloquearAñadirClase()>Kick boxing</option>
-            <option value="7" onclick=bloquearAñadirClase()>Pilates</option>
-            <option value="8" onclick=bloquearAñadirClase()>Yoga</option>
-            <option value="9" onclick=bloquearAñadirClase()>Zumba</option>
+        <select name="añadirClase" class="añadirClase">
+            <option value="1" class="añadirCardio" onclick=bloquearAñadirClase()>Cardio</option>  
+            <option value="2" class="añadirBodyFit" onclick=bloquearAñadirClase()>BodyFit</option>
+            <option value="3" class="añadirBoxeo" onclick=bloquearAñadirClase()>Boxeo</option>
+            <option value="4" class="añadirTonoFit" onclick=bloquearAñadirClase()>Tono-Fit</option>
+            <option value="5" class="añadirSpinning" onclick=bloquearAñadirClase()>Spinning</option>
+            <option value="6" class="añadirKickBoxing" onclick=bloquearAñadirClase()>Kick boxing</option>
+            <option value="7" class="añadirPilates" onclick=bloquearAñadirClase()>Pilates</option>
+            <option value="8" class="añadirYoga" onclick=bloquearAñadirClase()>Yoga</option>
+            <option value="9" class="añadirZumba" onclick=bloquearAñadirClase()>Zumba</option>
             <option selected disabled>Añadir Clase</option> 
         </select>
     </div>
@@ -115,119 +115,127 @@
                 <div class="d-flex flex-row-reverse bd-highlight mb-3">
                         <button id="volver" onclick=volver() class="cambiar">Cambiar Usuario</button>
                 </div>
-            </nav>
+            </nav>        
         </header>
         <h1>Administrador</h1>
-        <table id="sala1">
-            <tr>
-                <th></th>
-                <th>Lunes</th>
-                <th>Martes</th>
-                <th>Miercoles</th>
-            </tr>
-            <tr>
-                <th>08:00-10:00</th>
-                <th>Pilates</th>
-                <th>Spinning</th>
-                <th>Boxeo</th>
-            </tr>
-            <tr>
-                <th>10:00-12:00</th>
-                <th>Zumba</th>
-                <th>Cardio</th>
-                <th>Yoga</th>
-            </tr>
-            <tr>
-                <th>12:00-14:00</th>
-                <th>BodyFit</th>
-                <th>Tono-Fit</th>
-                <th>Kick boxing</th>
-            </tr>
-            <tr>
-                <th>15:00-17:00</th>
-                <th>Kick boxing</th>
-                <th>Pilates</th>
-                <th>Spinning</th>
-            </tr>
-            <tr>
-                <th>17:00-19:00</th>
-                <th>Boxeo</th>
-                <th>BodyFit</th>
-                <th>Cardio</th>
-            </tr>
-            <tr>
-                <th>19:00-21:00</th>
-                <th>Yoga</th>
-                <th>Zumba</th>
-                <th>Tono-Fit</th>
-            </tr>
-        </table>
-        <table id="sala2">
-            <tr>
-                <th></th>
-                <th>Lunes</th>
-                <th>Martes</th>
-                <th>Miercoles</th>
-            </tr>
-            <tr>
-                <th>08:00-10:00</th>
-                <th>Pilates</th>
-                <th>Spinning</th>
-                <th>Boxeo</th>
-            </tr>
-            <tr>
-                <th>10:00-12:00</th>
-                <th>Zumba</th>
-                <th>Cardio</th>
-                <th>Yoga</th>
-            </tr>
-            <tr>
-                <th>12:00-14:00</th>
-                <th>BodyFit</th>
-                <th>Tono-Fit</th>
-                <th>Kick boxing</th>
-            </tr>
-            <tr>
-                <th>15:00-17:00</th>
-                <th>Kick boxing</th>
-                <th>Pilates</th>
-                <th>Spinning</th>
-            </tr>
-            <tr>
-                <th>17:00-19:00</th>
-                <th>Boxeo</th>
-                <th>BodyFit</th>
-                <th>Cardio</th>
-            </tr>
-            <tr>
-                <th>19:00-21:00</th>
-                <th>Yoga</th>
-                <th>Zumba</th>
-                <th>Tono-Fit</th>
-            </tr>
-        </table>
-        <select name="eliminarClase">
-            <option value="1">Cardio</option>  
-            <option value="2">BodyFit</option>
-            <option value="3">Boxeo</option>
-            <option value="4">Tono-Fit</option>
-            <option value="5">Spinning</option>
-            <option value="6">Kick boxing</option>
-            <option value="7">Pilates</option>
-            <option value="8">Yoga</option>
-            <option value="9">Zumba</option>
+        <button onclick=sala1() class="mostrarSala1">Sala 1</button>
+        <button onclick=sala2() class="mostrarSala2">Sala 2</button>
+        <div id="sala1">
+            <h2>SALA1</h2>
+            <table>
+                <tr>
+                    <th></th>
+                    <th class="hora">Lunes</th>
+                    <th class="hora">Martes</th>
+                    <th class="hora">Miercoles</th>
+                </tr>
+                <tr>
+                    <th class="hora">08:00-10:00</th>
+                    <th id="pilates">Pilates</th>
+                    <th id="spining">Spinning</th>
+                    <th id="boxeo">Boxeo</th>
+                </tr>
+                <tr>
+                    <th class="hora">10:00-12:00</th>
+                    <th id="zumba">Zumba</th>
+                    <th id="cardio">Cardio</th>
+                    <th id="yoga">Yoga</th>
+                </tr>
+                <tr>
+                    <th class="hora">12:00-14:00</th>
+                    <th id="bodyFit">BodyFit</th>
+                    <th id="tonoFit">Tono-Fit</th>
+                    <th id="kickBoxing">Kick boxing</th>
+                </tr>
+                <tr>
+                    <th class="hora">15:00-17:00</th>
+                    <th id="kickBoxing">Kick boxing</th>
+                    <th id="pilates">Pilates</th>
+                    <th id="spining">Spinning</th>
+                </tr>
+                <tr>
+                    <th class="hora">17:00-19:00</th>
+                    <th id="boxeo">Boxeo</th>
+                    <th id="bodyFit">BodyFit</th>
+                    <th id="cardio">Cardio</th>
+                </tr>
+                <tr>
+                    <th class="hora">19:00-21:00</th>
+                    <th id="yoga">Yoga</th>
+                    <th id="zumba">Zumba</th>
+                    <th id="tonoFit">Tono-Fit</th>
+                </tr>
+            </table>
+        </div>
+        <div id="sala2">
+            <h2>SALA 2</h2>
+            <table>
+                <tr>
+                    <th></th>
+                    <th class="hora">Lunes</th>
+                    <th class="hora">Martes</th>
+                    <th class="hora">Miercoles</th>
+                </tr>
+                <tr>
+                    <th class="hora">08:00-10:00</th>
+                    <th id="zumba">Zumba</th>
+                    <th id="cardio">Cardio</th>
+                    <th id="yoga">Yoga</th>
+                </tr>
+                <tr>
+                    <th class="hora">10:00-12:00</th>
+                    <th id="pilates">Pilates</th>
+                    <th id="spining">Spinning</th>
+                    <th id="boxeo">Boxeo</th>
+                </tr>
+                <tr>
+                    <th class="hora">12:00-14:00</th>
+                    <th id="kickBoxing">Kick boxing</th>
+                    <th id="pilates">Pilates</th>
+                    <th id="spining">Spinning</th>
+                </tr>
+                <tr>
+                    <th class="hora">15:00-17:00</th>
+                    <th id="bodyFit">BodyFit</th>
+                    <th id="tonoFit">Tono-Fit</th>
+                    <th id="kickBoxing">Kick boxing</th>
+                </tr>
+                <tr>
+                    <th class="hora">17:00-19:00</th>
+                    <th id="yoga">Yoga</th>
+                    <th id="zumba">Zumba</th>
+                    <th id="tonoFit">Tono-Fit</th>
+                </tr>
+                <tr>
+                    <th class="hora">19:00-21:00</th>
+                    <th id="boxeo">Boxeo</th>
+                    <th id="bodyFit">BodyFit</th>
+                    <th id="cardio">Cardio</th>
+                </tr>
+            </table>
+        </div>
+        <select name="eliminarClase" class="eliminarClase">
+            <option value="1" class="eliminarCardio">Cardio</option>  
+            <option value="2" class="eliminarBodyFit">BodyFit</option>
+            <option value="3" class="eliminarBoxeo">Boxeo</option>
+            <option value="4" class="eliminarTonoFit">Tono-Fit</option>
+            <option value="5" class="eliminarSpinning">Spinning</option>
+            <option value="6" class="eliminarKickBoxing">Kick boxing</option>
+            <option value="7" class="eliminarPilates">Pilates</option>
+            <option value="8" class="eliminarYoga">Yoga</option>
+            <option value="9" class="eliminarZumba">Zumba</option>
             <option selected disabled>Eliminar Clase</option> 
         </select>
-        <select name="añadirClase">
-            <option value="1">Cardio</option>  
-            <option value="2">BodyFit</option>
-            <option value="3">Boxeo</option>
-            <option value="4">Tono-Fit</option>
-            <option value="5">Spinning</option>
-            <option value="6">Kick boxing</option>
-            <option value="7">Pilates</option>
-            <option value="8">Yoga</option>
-            <option value="9">Zumba</option>
+        <select name="añadirClase" class="añadirClase">
+            <option value="1" class="añadirCardio">Cardio</option>  
+            <option value="2" class="añadirBodyFit">BodyFit</option>
+            <option value="3" class="añadirBoxeo">Boxeo</option>
+            <option value="4" class="añadirTonoFit">Tono-Fit</option>
+            <option value="5" class="añadirSpinning">Spinning</option>
+            <option value="6" class="añadirKickBoxing">Kick boxing</option>
+            <option value="7" class="añadirPilates">Pilates</option>
+            <option value="8" class="añadirYoga">Yoga</option>
+            <option value="9" class="añadirZumba">Zumba</option>
             <option selected disabled>Añadir Clase</option> 
         </select>
         <select name="eliminarSala">

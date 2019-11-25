@@ -102,6 +102,27 @@ function entrarCliente(){
     var login = document.getElementById("registro");
     login.style.display = "none";
     horario.style.display = "block";
+    //Al entrar en cliente las clases del horario no se vean
+    document.getElementById("cardio").style.display = "none";
+    document.getElementById("bodyFit").style.display = "none";
+    document.getElementById("boxeo").style.display = "none";
+    document.getElementById("tonoFit").style.display = "none";
+    document.getElementById("spining").style.display = "none";
+    document.getElementById("kickBoxing").style.display = "none";
+    document.getElementById("pilates").style.display = "none";
+    document.getElementById("yoga").style.display = "none";
+    document.getElementById("zumba").style.display = "none";
+    
+    //Las opciones de eliminar de las clases que no esten, estarán bloqueadas
+    // elimCardio.submitbutton.disabled = true;
+    // eliminarBodyFit.submitbutton.disabled = true;
+    // eliminarBoxeo.submitbutton.disabled = true;
+    // eliminarTonoFit.submitbutton.disabled = true;
+    // eliminarSpinning.submitbutton.disabled = true;
+    // eliminarKickBoxing.submitbutton.disabled = true;
+    // eliminarPilates.submitbutton.disabled = true;
+    // eliminarYoga.submitbutton.disabled = true;
+    // eliminarZumba.submitbutton.disabled = true;
 }
 
 function entrarAdmin(){
@@ -109,6 +130,10 @@ function entrarAdmin(){
     var login = document.getElementById("registro");
     login.style.display = "none";
     horario.style.display = "block";
+    //Mostrar Sala 1
+    document.getElementById("sala1").style.display = "block";
+    //Ocultar Sala 2
+    document.getElementById("sala2").style.display = "none";
 }
 
 function añadirSala(){
@@ -130,9 +155,40 @@ var jsonClases=
 ;
 
 function bloquearEliminarClase(){
-    //var bloqueado = 
-    //var libre = 
-    //bloqueado.disabled 
+    var cardio = document.getElementByClass("cardio");
+    var elimCardio = document.getElementByClass("elimCardio");
+    if (cardio.style.display == "none") {
+        elimCardio.style.display = "disabled";
+    }
+    var bodyFit = document.getElementByClass("bodyFit");
+    var elimBodyFit = document.getElementByClass("elimBodyFit");
+    if (bodyFit.style.display == "none") {
+        elimBodyFit.style.display = "disabled";
+    }
+    var boxeo = document.getElementByClass("boxeo");
+    var elimBoxeo = document.getElementByClass("elimBoxeo");
+    if (boxeo.style.display == "none") {
+        elimBoxeo.style.display = "disabled";
+    }
+    var tonoFit = document.getElementByClass("tonoFit");
+    var elimTonoFit = document.getElementByClass("elimTonoFit");
+    if (tonoFit.style.display == "none") {
+        elimTonoFit.style.display = "disabled";
+    }
+}
+
+function sala1() {
+    //Mostrar Sala 1
+    document.getElementById("sala1").style.display = "block";
+    //Ocultar Sala 2
+    document.getElementById("sala2").style.display = "none";
+}
+
+function sala2() {
+    //Ocultar Sala 1
+    document.getElementById("sala1").style.display = "none";    
+    //Mostrar Sala 2
+    document.getElementById("sala2").style.display = "block";
 }
 
 function bloquearAñadirClase(){
